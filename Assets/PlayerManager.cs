@@ -6,6 +6,9 @@ public class PlayerManager : MonoBehaviour
 {
     public GameObject player1;
     public GameObject player2;
+
+    public GameObject player1Canvas;
+    public GameObject player2Canvas;
     private Transform checkPoint;
 
     public void SpawnPlayer()
@@ -19,6 +22,10 @@ public class PlayerManager : MonoBehaviour
 
         player1.SetActive(true);
         player2.SetActive(true);
+
+        player1Canvas.SetActive(true);
+        player2Canvas.SetActive(true);
+
         player1.transform.position = checkPoint.position;
         player2.transform.position = checkPoint.position;
     }
