@@ -9,6 +9,8 @@ public class PlayerBombRange : MonoBehaviour
     public float detectionRange = 5f; // Maximum allowed distance between players
     public bool isPlayerInRange;
     public GameObject ExplosionVFX;
+    public GameObject rangeCanvas;
+    public PlayerManager playerManager;
 
     private void Update()
     {
@@ -19,25 +21,16 @@ public class PlayerBombRange : MonoBehaviour
         isPlayerInRange = distance <= detectionRange;
 
         if (!isPlayerInRange)
-        {
             ExplodeGiko();
-        }
     }
 
     private void ExplodeGiko()
     {
+        isPlayerInRange = true;
+        playerManager.SpawnPlayer();
         gameObject.SetActive(false);
+        rangeCanvas.SetActive(false);
         Instantiate(ExplosionVFX, transform.position, ExplosionVFX.transform.rotation);
     }
 
-    private void OnDrawGizmos()
-    {
-        if (thisPlayer == null) return;
-
-        // Set Gizmo color (Green = in range, Red = out of range)
-        Gizmos.color = isPlayerInRange ? Color.green : Color.red;
-
-        // Draw a sphere around Player 1 to visualize the detection range
-        Gizmos.DrawWireSphere(thisPlayer.position, detectionRange);
-    }
 }
