@@ -10,7 +10,7 @@ public class PlayerCheckpoint : MonoBehaviour
     {
         if (other.CompareTag("Checkpoint"))
         {
-            Debug.Log("wow");
+            Debug.Log("CheckPoint!");
             playerManager.SetCheckPoint(other.transform);
         }
     }

@@ -8,6 +8,7 @@ public class PlayerBombRange : MonoBehaviour
     public Transform otherPlayer;
     public float detectionRange = 5f; // Maximum allowed distance between players
     public bool isPlayerInRange;
+
     public GameObject ExplosionVFX;
     public GameObject rangeCanvas;
     public PlayerManager playerManager;
@@ -24,7 +25,7 @@ public class PlayerBombRange : MonoBehaviour
             ExplodeGiko();
     }
 
-    private void ExplodeGiko()
+    public void ExplodeGiko()
     {
         isPlayerInRange = true;
         playerManager.SpawnPlayer();
