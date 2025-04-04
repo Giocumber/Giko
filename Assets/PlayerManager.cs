@@ -34,4 +34,5 @@ public class PlayerManager : MonoBehaviour
     {
         checkPoint = newCheckpoint;
     }
+
 }
