@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   throwInterval: 1
-  bananaPrefab: {fileID: 8840356593777028125, guid: d4d2fb383bb0b7a428114b0cd5047866, type: 3}
+  bananaPrefab: {fileID: 1806839346061163892, guid: d4d2fb383bb0b7a428114b0cd5047866, type: 3}
   minRotation: 200
   maxRotation: 260
   detectionRadius: 20
