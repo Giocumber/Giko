@@ -5,8 +5,9 @@ using UnityEngine;
 public class PlayerCheckpoint : MonoBehaviour
 {
     private PlayerManager playerManager;
-    private bool checkpointTriggered = false;
     private Animator checkpointAnim;
+
+    public bool checkpointTriggered = false;
     public GameObject checkpointVFX;
 
     private void Awake()
