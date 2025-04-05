@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: eefba246c00cc79479b4e3a2bc2c41a6, type: 2}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: 057a5492038bc554d8dce86c0eda7227, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 48d3c690dc4b8e74b96f5e19e46bfc5e, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -321,7 +321,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1d7d104af1fe1c34ea42605b5221c867, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.2661529
+      value: 0.20211494
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1d7d104af1fe1c34ea42605b5221c867, type: 3}
       propertyPath: m_LocalRotation.x
@@ -329,7 +329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1d7d104af1fe1c34ea42605b5221c867, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.96393085
+      value: -0.9793618
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1d7d104af1fe1c34ea42605b5221c867, type: 3}
       propertyPath: m_LocalRotation.z
@@ -341,7 +341,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1d7d104af1fe1c34ea42605b5221c867, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -149.129
+      value: -156.679
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1d7d104af1fe1c34ea42605b5221c867, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -353,7 +353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1d7d104af1fe1c34ea42605b5221c867, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d7d104af1fe1c34ea42605b5221c867, type: 3}
@@ -568,13 +568,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 389365706}
-  m_LocalRotation: {x: 0.4208475, y: -0.08290152, z: 0.038657434, w: 0.9025078}
+  m_LocalRotation: {x: 0.3516215, y: -0.50279063, z: 0.23445588, w: 0.75405204}
   m_LocalPosition: {x: 0, y: 67.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 50, y: -10.497, z: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: -67.39, z: 0}
 --- !u!1 &445093308
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,15 +883,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: GIKO
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d93ff01879c7fd0498f9c596d838b594, type: 2}
+  m_sharedMaterial: {fileID: 1441789887884641072, guid: d93ff01879c7fd0498f9c596d838b594, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280098077
-  m_fontColor: {r: 0.11320752, g: 0.11320752, b: 0.11320752, a: 1}
+    rgba: 4282335039
+  m_fontColor: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1294,7 +1294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f1da13dea635a8d4f9a90c690eedb229, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 23.7
+      value: 23.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f1da13dea635a8d4f9a90c690eedb229, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1302,11 +1302,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f1da13dea635a8d4f9a90c690eedb229, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -39.9
+      value: -37.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f1da13dea635a8d4f9a90c690eedb229, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9978299
+      value: -0.71849966
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f1da13dea635a8d4f9a90c690eedb229, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1314,7 +1314,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f1da13dea635a8d4f9a90c690eedb229, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.065844886
+      value: 0.6955274
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f1da13dea635a8d4f9a90c690eedb229, type: 3}
       propertyPath: m_LocalRotation.z
@@ -1326,7 +1326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f1da13dea635a8d4f9a90c690eedb229, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -7.551
+      value: 271.861
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f1da13dea635a8d4f9a90c690eedb229, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1338,7 +1338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f1da13dea635a8d4f9a90c690eedb229, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1da13dea635a8d4f9a90c690eedb229, type: 3}
@@ -1787,7 +1787,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a56ddc5053c4e06408b429e37772e662, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.79108876
+      value: -0.751154
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a56ddc5053c4e06408b429e37772e662, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1795,7 +1795,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a56ddc5053c4e06408b429e37772e662, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.6117015
+      value: -0.6601271
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a56ddc5053c4e06408b429e37772e662, type: 3}
       propertyPath: m_LocalRotation.z
@@ -1807,7 +1807,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a56ddc5053c4e06408b429e37772e662, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 75.425
+      value: -277.38098
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a56ddc5053c4e06408b429e37772e662, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1988,17 +1988,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start
+  m_text: START
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d93ff01879c7fd0498f9c596d838b594, type: 2}
+  m_sharedMaterial: {fileID: 1441789887884641072, guid: d93ff01879c7fd0498f9c596d838b594, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280098077
-  m_fontColor: {r: 0.11320752, g: 0.11320752, b: 0.11320752, a: 1}
+    rgba: 4282335039
+  m_fontColor: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2325,17 +2325,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Quit
+  m_text: QUIT
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d93ff01879c7fd0498f9c596d838b594, type: 2}
+  m_sharedMaterial: {fileID: 1441789887884641072, guid: d93ff01879c7fd0498f9c596d838b594, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280098077
-  m_fontColor: {r: 0.11320752, g: 0.11320752, b: 0.11320752, a: 1}
+    rgba: 4282335039
+  m_fontColor: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

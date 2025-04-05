@@ -26,8 +26,11 @@ public class PlayerManager : MonoBehaviour
         player1Canvas.SetActive(true);
         player2Canvas.SetActive(true);
 
-        player1.transform.position = checkPoint.position;
-        player2.transform.position = checkPoint.position;
+        Vector3 spawnPoint1 = new Vector3(checkPoint.position.x - 1f, checkPoint.position.y, checkPoint.position.z);
+        Vector3 spawnPoint2 = new Vector3(checkPoint.position.x + 1f, checkPoint.position.y, checkPoint.position.z);
+
+        player1.transform.position = spawnPoint1;
+        player2.transform.position = spawnPoint2;
     }
 
     public void SetCheckPoint(Transform newCheckpoint)

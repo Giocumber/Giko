@@ -4,14 +4,29 @@ using UnityEngine;
 
 public class PlayerCheckpoint : MonoBehaviour
 {
-    public PlayerManager playerManager;
+    private PlayerManager playerManager;
+    private bool checkpointTriggered = false;
+    private Animator checkpointAnim;
+    public GameObject checkpointVFX;
+
+    private void Awake()
+    {
+        playerManager = FindObjectOfType<PlayerManager>();
+        checkpointAnim = GetComponent<Animator>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Checkpoint"))
+        if (other.CompareTag("Player"))
         {
-            Debug.Log("CheckPoint!");
-            playerManager.SetCheckPoint(other.transform);
+            if (!checkpointTriggered)
+            {
+                checkpointAnim.SetTrigger("CheckPointTaken");
+                checkpointTriggered = true;
+                checkpointVFX.SetActive(true);
+            }
+
+            playerManager.SetCheckPoint(transform);
         }
     }
 }
