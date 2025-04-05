@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerCheckpoint : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class PlayerCheckpoint : MonoBehaviour
 
     public bool checkpointTriggered = false;
     public GameObject checkpointVFX;
+    public Image checkpointRing;
+    public Color checkpointTakenColor;
 
     private void Awake()
     {
@@ -25,6 +28,7 @@ public class PlayerCheckpoint : MonoBehaviour
                 checkpointAnim.SetTrigger("CheckPointTaken");
                 checkpointTriggered = true;
                 checkpointVFX.SetActive(true);
+                checkpointRing.color = checkpointTakenColor;
             }
 
             playerManager.SetCheckPoint(transform);

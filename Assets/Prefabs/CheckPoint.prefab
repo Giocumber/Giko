@@ -256,7 +256,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e474899994e8ee340a80d4f740e29d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkpointTriggered: 0
   checkpointVFX: {fileID: 3251929005234260739}
+  checkpointRing: {fileID: 528331400615356575}
+  checkpointTakenColor: {r: 0.100427166, g: 0.8584906, b: 0.19092767, a: 1}
 --- !u!1 &925877921046849782
 GameObject:
   m_ObjectHideFlags: 0

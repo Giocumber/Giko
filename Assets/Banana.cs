@@ -8,7 +8,7 @@ public class Banana : MonoBehaviour
 
     private void Start()
     {
-        Destroy(gameObject, 2f); // Destroy banana after 5 seconds to prevent clutter
+        Destroy(gameObject, 4f); // Destroy banana after 5 seconds to prevent clutter
     }
 
     private void Update()
