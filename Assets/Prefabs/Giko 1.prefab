@@ -468,6 +468,7 @@ MonoBehaviour:
     m_Bits: 64
   groundCheck: {fileID: 7042871380675199658}
   groundCheckRadius: 0.2
+  coyoteTime: 0.2
 --- !u!114 &4223504157920691918
 MonoBehaviour:
   m_ObjectHideFlags: 0

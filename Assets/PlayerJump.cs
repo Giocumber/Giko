@@ -12,16 +12,26 @@ public class PlayerJump : MonoBehaviour
     private Rigidbody rb;
     private bool isGrounded;
 
+    public float coyoteTime = 0.2f; 
+    private float coyoteTimeCounter;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
     }
-
-    public void Jump()
+    private void Update()
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundCheckRadius, groundLayer);
 
         if (isGrounded)
+            coyoteTimeCounter = coyoteTime;
+        else
+            coyoteTimeCounter -= Time.deltaTime;
+    }
+
+    public void Jump()
+    {
+        if (coyoteTimeCounter > 0f)
             rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
     }
 }

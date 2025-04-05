@@ -16,14 +16,14 @@ public class Banana : MonoBehaviour
         transform.position += transform.forward * speed * Time.deltaTime;
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            PlayerBombRange[] playerBombRanges = FindObjectsOfType<PlayerBombRange>();
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.CompareTag("Player"))
+    //    {
+    //        PlayerBombRange[] playerBombRanges = FindObjectsOfType<PlayerBombRange>();
 
-            foreach(PlayerBombRange playerBombRange in playerBombRanges)
-                playerBombRange.ExplodeGiko();
-        }
-    }
+    //        foreach(PlayerBombRange playerBombRange in playerBombRanges)
+    //            playerBombRange.ExplodeGiko();
+    //    }
+    //}
 }

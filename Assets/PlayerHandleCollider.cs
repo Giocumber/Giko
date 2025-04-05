@@ -6,7 +6,7 @@ public class PlayerHandleCollider : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Cactus"))
+        if (other.CompareTag("Hazard"))
         {
             PlayerBombRange[] playerBombRanges = FindObjectsOfType<PlayerBombRange>();
 
