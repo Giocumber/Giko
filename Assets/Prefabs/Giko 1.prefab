@@ -199,6 +199,8 @@ GameObject:
   - component: {fileID: 4075479985640122930}
   - component: {fileID: 4879559212205088115}
   - component: {fileID: 4075479985640122928}
+  - component: {fileID: 7407488385079496631}
+  - component: {fileID: 4223504157920691918}
   m_Layer: 3
   m_Name: Giko 1
   m_TagString: Player
@@ -347,7 +349,19 @@ MonoBehaviour:
     m_ActionId: e85beb1b-2e93-48a4-9bb0-4282d8a58d22
     m_ActionName: UI/RightClick[/Mouse/rightButton]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7407488385079496631}
+        m_TargetAssemblyTypeName: PlayerJump, Assembly-CSharp
+        m_MethodName: Jump
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 0a8f56c9-ff2a-42d5-b639-107ce76e342e
     m_ActionName: UI/TrackedDevicePosition
   - m_PersistentCalls:
@@ -436,6 +450,36 @@ MonoBehaviour:
   ExplosionVFX: {fileID: 7528466333255461315, guid: 90023eae3e48597468009d9f68134cad, type: 3}
   rangeCanvas: {fileID: 0}
   playerManager: {fileID: 0}
+--- !u!114 &7407488385079496631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4075479985640122923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03bc04fe175bd6243a84591a48c6e712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 5.5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  groundCheck: {fileID: 7042871380675199658}
+  groundCheckRadius: 0.2
+--- !u!114 &4223504157920691918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4075479985640122923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f05ca6d808bda2498d6eb4bc1a1bb1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4784651131063789279
 GameObject:
   m_ObjectHideFlags: 0

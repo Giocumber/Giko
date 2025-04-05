@@ -385,6 +385,8 @@ GameObject:
   - component: {fileID: 7061502979693331965}
   - component: {fileID: 7061502979693331957}
   - component: {fileID: 7061502979693331956}
+  - component: {fileID: 5843205371770711588}
+  - component: {fileID: 5517944310782195765}
   m_Layer: 3
   m_Name: Giko 2
   m_TagString: Player
@@ -473,10 +475,6 @@ MonoBehaviour:
     m_ActionId: 9e46c547-c7fd-42e9-a194-d875fb3caa1d
     m_ActionName: Player1/Look[/Mouse/delta]
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: a852b368-cd5e-4739-ba5b-efcbcfa86267
-    m_ActionName: Player1/Fire[/Mouse/leftButton]
-  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7061502979693331952}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
@@ -490,6 +488,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_ActionId: a852b368-cd5e-4739-ba5b-efcbcfa86267
+    m_ActionName: Player1/Fire[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
     m_ActionId: 4680d56c-e268-4c6b-8240-ef5d694ebcd4
     m_ActionName: Player2/P2_Move[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
   - m_PersistentCalls:
@@ -537,7 +539,19 @@ MonoBehaviour:
     m_ActionId: 0a8f56c9-ff2a-42d5-b639-107ce76e342e
     m_ActionName: UI/TrackedDevicePosition
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5843205371770711588}
+        m_TargetAssemblyTypeName: PlayerJump, Assembly-CSharp
+        m_MethodName: Jump
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 2de61ff1-d77a-453a-a6ad-c6534f548877
     m_ActionName: UI/TrackedDeviceOrientation
   m_NeverAutoSwitchControlSchemes: 0
@@ -622,3 +636,33 @@ MonoBehaviour:
   ExplosionVFX: {fileID: 8760771586726255120, guid: ee859552ef68a21459ebc505c56636d0, type: 3}
   rangeCanvas: {fileID: 0}
   playerManager: {fileID: 0}
+--- !u!114 &5843205371770711588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7061502979693331959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03bc04fe175bd6243a84591a48c6e712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 5.5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  groundCheck: {fileID: 7061502979693331967}
+  groundCheckRadius: 0.2
+--- !u!114 &5517944310782195765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7061502979693331959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f05ca6d808bda2498d6eb4bc1a1bb1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

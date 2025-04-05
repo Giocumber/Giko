@@ -28,10 +28,11 @@ public class PlayerBombRange : MonoBehaviour
     public void ExplodeGiko()
     {
         isPlayerInRange = true;
-        playerManager.SpawnPlayer();
         gameObject.SetActive(false);
         rangeCanvas.SetActive(false);
         Instantiate(ExplosionVFX, transform.position, ExplosionVFX.transform.rotation);
+
+        playerManager.SpawnPlayer();
     }
 
 }
