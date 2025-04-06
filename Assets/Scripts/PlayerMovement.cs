@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody rb;
     private Vector2 moveInput;
     public bool isMoving = false;
+    public bool canMove = true;
 
     private void Start()
     {
@@ -25,6 +26,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!canMove) return;
+
         Vector3 move = new Vector3(moveInput.x, 0, moveInput.y).normalized * speed * Time.deltaTime;
         transform.Translate(move, Space.World); // Move in world space
 

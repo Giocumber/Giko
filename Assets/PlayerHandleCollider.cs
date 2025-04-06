@@ -8,6 +8,7 @@ public class PlayerHandleCollider : MonoBehaviour
     {
         if (other.CompareTag("Hazard"))
         {
+            AudioManager.Instance.PlayExplosionSFX();
             PlayerBombRange[] playerBombRanges = FindObjectsOfType<PlayerBombRange>();
 
             foreach (PlayerBombRange playerBombRange in playerBombRanges)

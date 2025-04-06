@@ -27,6 +27,8 @@ public class PlayerBombRange : MonoBehaviour
 
     public void ExplodeGiko()
     {
+        AudioManager.Instance.PlayExplosionSFX();
+
         isPlayerInRange = true;
         gameObject.SetActive(false);
         rangeCanvas.SetActive(false);
