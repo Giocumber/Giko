@@ -15,7 +15,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        canMove = true;
         rb = GetComponent<Rigidbody>();
+    }
+
+    void OnEnable()
+    {
+        canMove = true;
     }
 
     public void Move(InputAction.CallbackContext context)

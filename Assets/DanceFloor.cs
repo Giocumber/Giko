@@ -6,9 +6,10 @@ public class DanceFloor : MonoBehaviour
 {
     public Vector3 dancePosition1;
     public Vector3 dancePosition2;
-
     private int numOfDancer = 0;
+
     public DanceFloorLight danceFloorLight;
+    public GameObject endCanvas;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -24,11 +25,19 @@ public class DanceFloor : MonoBehaviour
             else
             {
                 other.transform.position = transform.position + dancePosition2;
+                AudioManager.Instance.PlayRatDance();
                 AnimalDanceManager.TriggerAllDances();
                 danceFloorLight.TriggerDanceLight();
+                StartCoroutine(EnableEndCanvas());
             }
 
             playerDance.TriggerDance();
         }
+    }
+
+    private IEnumerator EnableEndCanvas()
+    {
+        yield return new WaitForSeconds(2f);
+        endCanvas.SetActive(true);
     }
 }

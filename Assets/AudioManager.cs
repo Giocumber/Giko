@@ -36,4 +36,14 @@ public class AudioManager : MonoBehaviour
         yield return new WaitForSeconds(0.05f);
         audioSrcSFX.PlayOneShot(explosion);
     }
+
+    public void PlayRatDance()
+    {
+        audioSrcBGM.Play();
+    }
+
+    public void UnplayRatDance()
+    {
+        audioSrcBGM.Stop();
+    }
 }

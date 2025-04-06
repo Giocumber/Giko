@@ -13,6 +13,14 @@ public class PlayerManager : MonoBehaviour
 
     public void SpawnPlayer()
     {
+        //PlayerMovement movement1 = player1.GetComponent<PlayerMovement>();
+        //if (movement1 != null)
+        //    movement1.canMove = true;
+
+        //PlayerMovement movement2 = player2.GetComponent<PlayerMovement>();
+        //if (movement2 != null)
+        //    movement2.canMove = true;
+
         StartCoroutine(StartSpawnPlayer());
     }
 
