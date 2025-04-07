@@ -286,10 +286,6 @@ MonoBehaviour:
     m_ActionName: Player1/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: 9e46c547-c7fd-42e9-a194-d875fb3caa1d
-    m_ActionName: Player1/Look[/Mouse/delta]
-  - m_PersistentCalls:
-      m_Calls: []
     m_ActionId: a852b368-cd5e-4739-ba5b-efcbcfa86267
     m_ActionName: Player1/Fire[/Mouse/leftButton]
   - m_PersistentCalls:
@@ -308,10 +304,6 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 4680d56c-e268-4c6b-8240-ef5d694ebcd4
     m_ActionName: Player2/P2_Move[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: b9f89992-6d93-40ed-8e22-7d2ef94d3a34
-    m_ActionName: Player2/Look[/Mouse/delta]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: c57540e8-aa20-4dd5-baeb-9e55376adec3
@@ -368,6 +360,42 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 2de61ff1-d77a-453a-a6ad-c6534f548877
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7407488385079496631}
+        m_TargetAssemblyTypeName: PlayerJump, Assembly-CSharp
+        m_MethodName: Jump
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: da58192a-bf21-4081-ab68-89dc4d603a95
+    m_ActionName: Player1/Jump[/Keyboard/h]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e4d51a68-d5bf-4a71-b56a-57621b4b59fd
+    m_ActionName: Player2/Jump[/Keyboard/p,/Keyboard/numpad0]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GameStateManager, Assembly-CSharp
+        m_MethodName: PauseGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: c618e88c-555e-4f7d-9b4f-d665456119a4
+    m_ActionName: Player1/Pause[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player1
@@ -388,6 +416,7 @@ MonoBehaviour:
   speed: 5
   rotationSpeed: 10
   isMoving: 0
+  canMove: 0
 --- !u!54 &4075479985640122926
 Rigidbody:
   m_ObjectHideFlags: 0

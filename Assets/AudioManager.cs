@@ -8,6 +8,7 @@ public class AudioManager : MonoBehaviour
 
     [Header("AudioClips")]
     public AudioClip explosion;
+    public AudioClip checkpoint;
 
     [Header("AudioSrc")]
     public AudioSource audioSrcSFX;
@@ -35,6 +36,11 @@ public class AudioManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.05f);
         audioSrcSFX.PlayOneShot(explosion);
+    }
+
+    public void PlayCheckpointSFX()
+    {
+        audioSrcSFX.PlayOneShot(checkpoint);
     }
 
     public void PlayRatDance()

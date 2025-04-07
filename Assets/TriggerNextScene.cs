@@ -5,21 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class TriggerNextScene : MonoBehaviour
 {
-    public Animator transitionCanvas;
+    public SceneManagerScript sceneManager;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            StartCoroutine(NextScene());
+            sceneManager.LoadNextScene();
         }
     }
 
-    private IEnumerator NextScene()
-    {
-        transitionCanvas.SetTrigger("TransitionClose");
-        yield return new WaitForSeconds(2f);
-
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
 }

@@ -25,6 +25,7 @@ public class PlayerCheckpoint : MonoBehaviour
         {
             if (!checkpointTriggered)
             {
+                AudioManager.Instance.PlayCheckpointSFX();
                 checkpointAnim.SetTrigger("CheckPointTaken");
                 checkpointTriggered = true;
                 checkpointVFX.SetActive(true);

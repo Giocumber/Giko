@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 8300000, guid: 0a53e23b25ea4204f86b9c717a8c9016, type: 3}
+  checkpoint: {fileID: 8300000, guid: ceceb6272f6a49c42a56afa22dc0a4c1, type: 3}
   audioSrcSFX: {fileID: 8211957497463406493}
   audioSrcBGM: {fileID: 8211957497842442151}
 --- !u!1 &8211957497463406495
